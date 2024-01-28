@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .bodycontainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #790490cf;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.cabecera {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    background-color: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cuadropizza {
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    width: 25%;
+    height: 100%;
+    margin: 1px;
+    background: none;
+    justify-content: center;
+}
+
+.cuadrologo {
+    display: flex;
+    border: 2px solid rgb(250, 250, 250);
+    width: 50%;
+    height: 100%;
+    margin: 1px;
+    background: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    margin-top: 5px;
+    background-color: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.ladoizquierdo {
+    display: flex;
+    border: none;
+    width: 75%;
+    height: 95%;
+    margin: auto;
+    background: none;
+    flex-direction: column;
+}
+
+.izquierdaarriba {
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenedorpasos {
+    display: flex;
+    border: none;
+    background: none;
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paso1 {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background: #ffe600;
+    width: 95%;
+    height: 31%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paso2 {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background: #ff00ff;
+    width: 95%;
+    height: 31%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paso3 {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background: #ffe600;
+    width: 95%;
+    height: 31%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paso4 {
+    display: flex;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 6px;
+    background: #ff004c;
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ingredientesextra{
+    display: flex;
+    border: 3px inset;
+    border-radius: 6px;
+    background: none;
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 6px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.espingredientes {
+    display: flex;
+    border: 2px solid rgb(2, 0, 0);
+    border-radius: 6px;
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+    background: #ff00ff;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calculadora {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background: #ffe600;
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    margin: 20px auto; /* Ajusta el margen según tus necesidades */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    border: 2px solid rgb(138, 137, 75);
+    border-radius: 3px;
+}
+        </style>
+        <title> Pizza </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/stylesheets/pizzeria.css">
+        
+        <link rel="icon" href="resources/favicons/icontrol.png">
+    </head>
+    <body style="background-color: #f7c600">
+        <h1 style="text-align: center;"> Peter Piper Pizza </h1>
+        <hr>
+        <nav style="justify-content: space-around;">
+        </nav>
+        <hr>
+        <section class="bodycontainer">
+            <div class="cabecera">
+                <div class="cuadropizza">
+                    <img src="https://www.logotypes101.com/logos/379/E5B5FC201F5A41AF47DCA9C197E560F7/peterpiperpizzalogo.png" >
+                </div>
+                <div class="cuadrologo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Peter_Piper_Pizza.png" height="90%" style="margin-bottom: 1px;">
+                </div>
+                <div class="cuadropizza">
+                    <img src="https://www.logotypes101.com/logos/379/E5B5FC201F5A41AF47DCA9C197E560F7/peterpiperpizzalogo.png">
+                </div>
+            </div>
+            <div class="cuerpo">
+                <div class="ladoizquierdo">
+                    <div class="izquierdaarriba">
+                        <div class="contenedorpasos">
+                            <span class="paso1">
+                                <h3 style="text-align: center;"> Paso 1: ¿Tamaño de su Pizza? </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="chica"> Pequeña </label></p>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="mediana"> Mediana </label></p>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: center;"><label><input type="radio" name="tamaño" value="grande"> Grande </label></p>
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td>
+                                            6 Rebanadas
+                                        </td>
+                                        <td>
+                                            8 Rebanadas
+                                        </td>
+                                        <td>
+                                            12 Rebanadas
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center; color:rgba(0, 0, 0, 0.973);">
+                                        <td>
+                                            $135
+                                        </td>
+                                        <td>
+                                            $165
+                                        </td>
+                                        <td>
+                                            $185
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                            <span class="paso2">
+                                <h3 style="text-align: center;"> Paso 2: ¿Qué Masa Para su Pizza? </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table>
+                                    <tr  style="text-align: center;">
+                                        <td rowspan="4" style="border: 3px inset;">
+                                        </td>
+                                        <td rowspan="4">
+                                        </td>
+                                        <td>
+                                        <input type="radio" name="tipoMasa" value="tradicional">
+                                            - Nuestra Masa Tradicional
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td>
+                                        <input type="radio" name="tipoMasa" value="ligeraCrujiente">  
+                                            - Masa Lijera y Crujiente
+                                        </td>
+                                    </tr>
+                                    <tr  style="text-align: center;">
+                                        <td>
+                                        <input type="radio" name="tipoMasa" value="esponjosaSuave">
+                                            - Esponjosa y Suave ($15)
+                                        </td>
+                                    </tr>
+                                    <tr  style="text-align: center;">
+                                        <td>
+                                        <input type="radio" name="tipoMasa" value="orillaRellenaQueso">
+                                            -Con Orilla rellena de Queso Mozzarela ($30)
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                            <span class="paso3">
+                                <h3 style="text-align: center;"> Paso 3: ¿Con Queso Extra? </h3>
+                                <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                                <table>
+                                    <tr  style="text-align: center;">
+                                        <td rowspan="2" style="border: 3px inset;">
+                                        </td>
+                                        <td style="font-weight: bold;">
+                                            Cantidad
+                                        </td>
+                                        <td>
+                                            (5gr)
+                                        </td>
+                                        <td>
+                                            (12gr)
+                                        </td>
+                                        <td>
+                                            (20gr)
+                                        </td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td style="font-weight: bold;">
+                                            Costo Xtra
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            <input type="checkbox" name="quesoExtra" value="5"> $ 12                                            
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            <input type="checkbox" name="quesoExtra" value="12"> $ 18
+                                        </td>
+                                        <td style="font-weight: 700;">
+                                            <input type="checkbox" name="quesoExtra" value="20"> $ 25
+                                        </td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <div class="paso4">
+                            <h3 style="text-align: center; width: 100%;"> Paso 4: Ingrediente Extra  </h3>
+                            <hr size="3" color="black" width="95%" style="margin-top: -6px;">
+                            <span class="ingredientesextra">
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente1"> Salchicha </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente2"> Pepperoni </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente3"> Jamón </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente4"> Pierna </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente5"> Chorizo </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente6"> Tocino </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente7"> Carne Molida </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente8"> Pollo </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente9"> Pimientos </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente10"> Queso Motzzarella </label></p>
+                                <p><label><input type="checkbox" name="ingrediente" value="ingrediente11"> Piña </label></p>
+                            </span>
+                        </div>
+                    </div>
+                    <footer class="espingredientes">
+                        <h3 style="text-align: center;"> Especialidades: Algun Ingrediente Especial para tu pizza </h3>
+                        <table style="border: 3px; width: 95%; margin: auto;">
+                            <tr style="text-align: center;">
+                                <td rowspan="2">
+                                    <select name="ingredientes" id="ingrediente" style="border: 3px inset;">
+                                        <option value="0"> Ninguno </option>
+                                        <option value="pepperoni"> Aceitunas </option>
+                                        <option value="chiles"> Champiñones </option>
+                                        <option value="hongo"> Jalapeños </option>
+                                    </select>
+                                </td>
+                                <td rowspan="2">
+                                    <textarea rows="3" cols="50" style="width: 90%; margin: auto; border: 2px inset #dcd6ee; border-radius: 6px;"> Ingredientes deseados </textarea> 
+                                </td>
+                                <td>
+                                    Chica
+                                </td>
+                                <td>
+                                    Mediana
+                                </td>
+                                <td>
+                                    Grande
+                                </td>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <td>
+                                    $160
+                                </td>
+                                <td>
+                                    $190
+                                </td>
+                                <td>
+                                    $220
+                                </td>
+                            </tr>
+                        </table>
+                    </footer> 
+                    
+                    <div class="calculadora">
+                        <h3 style="text-align: center;">Calculador</h3>
+                        
+                        <p>
+                            <button onclick="calcularCosto()">Calcular Costo</button> 
+                        </p>
+                    </div>
+                
+                    <script>
+                        function calcularCosto() {
+                            // Obtener el tamaño de la pizza seleccionado
+                            var tamañoPizza = document.querySelector('input[name="tamaño"]:checked');
+                
+                            // Obtener el tipo de masa seleccionado
+                            var tipoMasa = document.querySelector('input[name="tipoMasa"]:checked');
+                
+                            // Obtener las cantidades de queso extra seleccionadas
+                            var cantidadesQuesoExtra = document.querySelectorAll('input[name="quesoExtra"]:checked');
+                            var totalQuesoExtra = 0;
+                
+                            // Validar que se hayan seleccionado todas las opciones necesarias
+                            if (!tamañoPizza || !tipoMasa || cantidadesQuesoExtra.length === 0) {
+                                alert("Por favor, selecciona el tamaño de la pizza, el tipo de masa y al menos una cantidad de queso extra.");
+                                return;
+                            }
+                
+                            // Calcular el costo total del queso extra seleccionado
+                            cantidadesQuesoExtra.forEach(function(checkbox) {
+                                totalQuesoExtra += obtenerCostoQuesoExtra(checkbox.value);
+                            });
+                
+                            // Calcular el costo total
+                            var costoTotal = obtenerCostoBase(tamañoPizza.value) +
+                                             obtenerCostoMasa(tipoMasa.value) +
+                                             totalQuesoExtra;
+                
+                            // Mostrar el resultado en un cuadro de alerta (puedes personalizar esto)
+                            alert("El costo total de tu pizza es: $" + costoTotal.toFixed(2));
+                        }
+                
+                        function obtenerCostoBase(tamaño) {
+                            // Definir los costos base según el tamaño de la pizza
+                            var costosBase = {
+                                chica: 135,
+                                mediana: 165,
+                                grande: 185
+                            };
+                
+                            // Devolver el costo base correspondiente al tamaño seleccionado
+                            return costosBase[tamaño];
+                        }
+                
+                        function obtenerCostoMasa(tipo) {
+                            // Definir los costos adicionales según el tipo de masa
+                            var costosMasa = {
+                                tradicional: 0,
+                                ligeraCrujiente: 0,
+                                esponjosaSuave: 15,
+                                orillaRellenaQueso: 30
+                            };
+                
+                            // Devolver el costo adicional correspondiente al tipo de masa seleccionado
+                            return costosMasa[tipo];
+                        }
+                
+                        function obtenerCostoQuesoExtra(cantidad) {
+                            // Definir el costo por gramo de queso extra
+                            var costoPorGramo = {
+                                5: 12,
+                                12: 18,
+                                20: 25
+                            };
+                
+                            // Devolver el costo total por la cantidad de queso extra seleccionada
+                            return costoPorGramo[cantidad];
+                        }
+
+                    </script>                       
+                
+                        </table>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
